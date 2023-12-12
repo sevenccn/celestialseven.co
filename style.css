@@ -1,0 +1,156 @@
+h1,h2,h3 {
+    background-color: rgb(106, 103, 103);
+    color: white;}
+
+
+h1 {
+    border: 0.1em solid rgb(59, 59, 59);
+    background-color: rgb(59, 59, 59);
+    padding: 0.5em;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+ color: white;}
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(225, 225, 225);}
+
+
+ul {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    text-align: center;
+
+} 
+
+
+
+
+li {
+
+    list-style-type: none;}
+
+    nav ul li {
+    border: 0.1em solid rgb(59, 59, 59);
+    background-color: rgb(109, 109, 109);
+    padding: 0.8em;
+    width: 9em;
+}
+    
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;}
+
+
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav ul li:hover::after {
+    width: 100%;
+
+}
+
+h2,h3 {
+    display: flex ;
+    justify-content: center;
+}
+
+
+
+
+button {
+    color: #fff;
+    display: flex;
+    justify-content:right;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0;
+    background: rgb(124, 124, 124);
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    margin: 1em;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;}
+
+button a
+{
+    color: #fff;
+    text-decoration: none;}
+
+
+  button:active {
+
+    transform: translateY(3px) }
+ 
+main p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+
+footer {
+    display: flex;
+    justify-content: center;}
+
+
+footer {
+ 
+border: 0.1em solid rgb(59, 59, 59);
+background-color: rgb(59, 59, 59);
+padding: 0.5em;
+width: auto;
+margin: auto;
+display: flex;
+justify-content: center;
+color: white;}
+
+
+div {
+ display: flex;}
+
+
+
+div p{
+ margin: 5em;}
+
+
+h4 {
+    margin: 5em;
+    font-size: large;}
+
+
+/* .container {  
+    width: 50%;
+    height: 50%;
+}
+
+.card {
+    width: 50%;
+    height: 50%;
+}
+
+.front,.back {
+height: 50%;
+width: 50%;
+}
+
+.front {
+    background-image:url(/img/black_shirt_achterkant_internetstandaarden.jpg);
+}
+
+.back {
+    background-image:url(/img/black_shirt_achterkant_internetstandaarden.jpg);   
+}
+ */
