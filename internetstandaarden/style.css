@@ -1,0 +1,175 @@
+h1 {
+    border: 0.1em solid rgb(146, 180, 218);
+    background-color: rgb(10, 34, 61);
+    padding: 0.5em;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+h2,
+h3 {
+    background-color: rgb(16, 60, 110);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+h4 {
+    margin: 5em;
+    font-size: large;
+}
+
+
+body {
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: rgb(146, 180, 218);
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* https://youtu.be/oYRda7UtuhA?si=iISulCSEsPxQtUwN - rond 10:30 min - reden voor 2% 6% */
+ul {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+/* https://learn.shayhowe.com/advanced-html-css/transitions-animations/ - transitional button*/
+
+
+li {
+
+    list-style-type: none;
+}
+
+nav ul li {
+    border: 0.1em solid rgb(45, 95, 153);
+    background-color: rgb(45, 95, 153);
+    padding: 0.8em;
+    width: 9em;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* https://youtu.be/oYRda7UtuhA?si=iISulCSEsPxQtUwN - rond 15 min - Interactief nav balk outline */
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 0.125em;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+
+/* Chat GPT*/
+
+nav a.active {
+    text-decoration: underline;
+    background:rgb(31, 60, 94)  
+    
+}
+
+
+/* zelfde source als nav, ook deels van mezelf*/
+
+div a {
+    border: 0.1em solid rgb(45, 95, 153);
+    background-color: rgb(45, 95, 153);
+    padding: 0.8em;
+    margin: auto;
+    width: 9em;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+div a::after {
+    content: '';
+    width: 0;
+    height: 0.125em;
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+div a:hover::after {
+    width: 100%;
+}
+
+
+/* Docent */
+section > div {
+    display: flex;
+}
+
+
+
+div p {
+    margin: 5em;
+    font-size: large;
+}
+
+button {
+    border: 0;
+    background: rgb(16, 60, 110);
+    border-radius: 1em;
+    box-shadow: 0 0.3125em 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 6em ;
+    outline: 0;
+    padding: 0.75em 1.25em;
+    transition: all .1s linear;
+  }
+  button:active {
+    box-shadow: 0 0.125em 0 #006599;
+    transform: translateY(3px);
+  }
+  
+footer {
+
+    border: 0.1em solid rgb(10, 34, 61);
+    background-color: rgb(10, 34, 61);
+    padding: 0.5em;
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
