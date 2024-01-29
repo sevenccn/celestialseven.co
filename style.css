@@ -1,40 +1,47 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+}
+
+
+
 h1 {
-    border: 0.1em solid rgb(146, 180, 218);
-    background-color: rgb(10, 34, 61);
+    border: 0.1em solid rgb(3, 15, 30);
+    background-color: rgb(16, 44, 75);
     padding: 0.5em;
     width: auto;
     margin: auto;
     display: flex;
     justify-content: center;
     color: white;
+    position: sticky;
+    top: 0;
 }
 
 h2,
-h3 {
+h3,
+h5 {
     background-color: rgb(16, 60, 110);
+    border: 0.1em solid rgb(21, 45, 71);
     color: white;
     display: flex;
     justify-content: center;
 }
-
-
-
-
 
 h4 {
     margin: 5em;
     font-size: large;
 }
 
+h5 {font-size: large;}
+
+
 
 body {
-    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: rgb(146, 180, 218);
+    margin: 0 ;
 }
 
-p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 /* https://youtu.be/oYRda7UtuhA?si=iISulCSEsPxQtUwN - rond 10:30 min - reden voor 2% 6% */
 ul {
@@ -54,16 +61,18 @@ li {
 }
 
 nav ul li {
-    border: 0.1em solid rgb(45, 95, 153);
+    border: 0.2em solid rgb(44, 81, 123);
     background-color: rgb(45, 95, 153);
     padding: 0.8em;
     width: 9em;
 }
 
 
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 
@@ -72,7 +81,7 @@ nav ul li a {
 nav ul li::after {
     content: '';
     width: 0%;
-    height: 0.125em;
+    height: 0.2em;
     background: #fff;
     display: block;
     margin: auto;
@@ -88,15 +97,24 @@ nav ul li:hover::after {
 
 nav a.active {
     text-decoration: underline;
-    background:rgb(31, 60, 94)  
-    
+    font-size: large;
+    background-color: rgb(38, 81, 130);
 }
 
+.pictures {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    margin: 1em;
+    padding: 1em;
+}
 
 /* zelfde source als nav, ook deels van mezelf*/
 
 div a {
-    border: 0.1em solid rgb(45, 95, 153);
+    border: 0.2em solid rgb(44, 81, 123);
     background-color: rgb(45, 95, 153);
     padding: 0.8em;
     margin: auto;
@@ -106,14 +124,14 @@ div a {
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
 div a::after {
     content: '';
     width: 0;
-    height: 0.125em;
+    height: 0.2em;
     background: #fff;
     display: block;
     position: absolute;
@@ -128,7 +146,7 @@ div a:hover::after {
 
 
 /* Docent */
-section > div {
+section>div {
     display: flex;
 }
 
@@ -147,29 +165,30 @@ button {
     color: #fff;
     cursor: pointer;
     font: inherit;
-    margin: 6em ;
+    margin: 6em;
     outline: 0;
     padding: 0.75em 1.25em;
     transition: all .1s linear;
-  }
-  button:active {
-    box-shadow: 0 0.125em 0 #006599;
-    transform: translateY(3px);
-  }
-  
-footer {
-
-    border: 0.1em solid rgb(10, 34, 61);
-    background-color: rgb(10, 34, 61);
-    padding: 0.5em;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    color: white;
 }
 
+button:active {
+    box-shadow: 0 0.125em 0 #006599;
+    transform: translateY(3px);
+}
 
+footer {
+    background-color: rgb(16, 44, 75);
+    border: 0.125em solid rgb(3, 15, 30);
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+    color: white;
+    padding-bottom: 2em;
+    font-size: large;
+}
 
+footer ul li a {
 
-
+    display: flex;
+    color: #fff;
+}
